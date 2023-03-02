@@ -13,7 +13,7 @@
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single", "backtick"],
+    "quotes": ["error", "single", "tickbacks"],
     "semi": ["error", "always"]
   }
 }
