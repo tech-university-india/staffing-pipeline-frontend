@@ -5,3 +5,4 @@ export const CASE_STUDIES_ROUTE = '/case-studies';
 export const PEOPLE_ROUTE = '/people';
 export const PEOPLE_DETAILS_ROUTE = '/people/:personId';
 export const ERROR_ROUTE = '/error';
+export const ANY_OTHER_ROUTE = '*';
