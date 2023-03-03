@@ -6,3 +6,4 @@ export const PEOPLE_ROUTE = '/people';
 export const PEOPLE_DETAILS_ROUTE = '/people/:personId';
 export const ERROR_ROUTE = '/error';
 export const ANY_OTHER_ROUTE = '*';
+export const HOME_ROUTE = '/';
