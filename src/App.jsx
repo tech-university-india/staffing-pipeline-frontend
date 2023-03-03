@@ -12,12 +12,12 @@ import './App.css';
 import {
   CASE_STUDIES_ROUTE,
   LOGIN_ROUTE,
-  ENGAGEMENTS_ROUTE,
-  ENGAGEMENT_DETAILS_ROUTE,
-  ANY_OTHER_ROUTE,
-  PEOPLE_ROUTE,
-  PEOPLE_DETAILS_ROUTE,
+  USERS_ROUTE,
+  USER_DETAILS_ROUTE,
+  PROJECTS_ROUTE,
+  PROJECT_DETAILS_ROUTE,
   HOME_ROUTE,
+  ANY_OTHER_ROUTE,
 } from './constants/Routes';
 
 function App() {
@@ -28,10 +28,10 @@ function App() {
           <Route path={HOME_ROUTE} element={<div>APP</div>} />
           <Route path={LOGIN_ROUTE} element={<LoginPage />} />
           <Route path={CASE_STUDIES_ROUTE} element={<CaseStudiesPage />} />
-          <Route path={ENGAGEMENTS_ROUTE} element={<EngagementsPage />} />
-          <Route path={ENGAGEMENT_DETAILS_ROUTE} element={<EngagementDetailsPage />} />
-          <Route path={PEOPLE_ROUTE} element={<PeoplePage />} />
-          <Route path={PEOPLE_DETAILS_ROUTE} element={<PeopleDetailsPage />} />
+          <Route path={PROJECTS_ROUTE} element={<EngagementsPage />} />
+          <Route path={PROJECT_DETAILS_ROUTE} element={<EngagementDetailsPage />} />
+          <Route path={USERS_ROUTE} element={<PeoplePage />} />
+          <Route path={USER_DETAILS_ROUTE} element={<PeopleDetailsPage />} />
           <Route path={ANY_OTHER_ROUTE} element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

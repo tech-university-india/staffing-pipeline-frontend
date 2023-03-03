@@ -1,9 +1,9 @@
 export const LOGIN_ROUTE = '/login';
-export const ENGAGEMENTS_ROUTE = '/engagements';
-export const ENGAGEMENT_DETAILS_ROUTE = '/engagements/:engagementId';
-export const CASE_STUDIES_ROUTE = '/case-studies';
-export const PEOPLE_ROUTE = '/people';
-export const PEOPLE_DETAILS_ROUTE = '/people/:personId';
+export const PROJECTS_ROUTE = '/projects';
+export const PROJECT_DETAILS_ROUTE = '/projects/:projectId';
+export const CASE_STUDIES_ROUTE = '/casestudies';
+export const USERS_ROUTE = '/users';
+export const USER_DETAILS_ROUTE = '/users/:userId';
 export const ERROR_ROUTE = '/error';
 export const ANY_OTHER_ROUTE = '*';
 export const HOME_ROUTE = '/';
