@@ -17,7 +17,7 @@ import {
   PROJECTS_ROUTE,
   PROJECT_DETAILS_ROUTE,
   HOME_ROUTE,
-  ANY_OTHER_ROUTE,
+  DEFAULT_ROUTE,
 } from './constants/Routes';
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
           <Route path={PROJECT_DETAILS_ROUTE} element={<EngagementDetailsPage />} />
           <Route path={USERS_ROUTE} element={<PeoplePage />} />
           <Route path={USER_DETAILS_ROUTE} element={<PeopleDetailsPage />} />
-          <Route path={ANY_OTHER_ROUTE} element={<ErrorPage />} />
+          <Route path={DEFAULT_ROUTE} element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </div>
