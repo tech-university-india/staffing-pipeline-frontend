@@ -7,23 +7,22 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs:  
-  test:
-
+jobs:
+  test:  
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js 18.x
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 18.x
         cache: 'npm'
+        
     - name: Install dependencies for testing
-    - run: npm i jest
+      run: npm install jest
     - name: Run unit tests
-    - run: npm test
-    
+      run: npm test
+
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -33,9 +32,8 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
+
     - name: Install dependencies for linting
-      run: npm install 
+      run: npm install
     - name: Run eslint check
-      run: npx eslint ./
-   
-      
+      run: npx eslint ./  
