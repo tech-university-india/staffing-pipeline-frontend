@@ -19,10 +19,12 @@ import {
   HOME_ROUTE,
   DEFAULT_ROUTE,
 } from './constants/Routes';
+import { Header } from './components';
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path={HOME_ROUTE} element={<div>APP</div>} />
