@@ -5,5 +5,5 @@ export const CASE_STUDIES_ROUTE = '/casestudies';
 export const USERS_ROUTE = '/users';
 export const USER_DETAILS_ROUTE = '/users/:userId';
 export const ERROR_ROUTE = '/error';
-export const DEFAULT_ROUTE = '*';
+export const NOT_FOUND_ROUTE = '*';
 export const HOME_ROUTE = '/';

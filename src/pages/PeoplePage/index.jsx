@@ -1,6 +1,7 @@
 import * as React from 'react';
+import './PeoplePage.css';
 
-const LoginPage = () => {
+const PeoplePage = () => {
   return (
     <div>
       <h1>People Page</h1>
@@ -8,4 +9,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default PeoplePage;
