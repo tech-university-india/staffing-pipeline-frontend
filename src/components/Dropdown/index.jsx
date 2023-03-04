@@ -30,7 +30,7 @@ export default function Dropdown({ dropdownName, dropdownData, selectOption }) {
         {dropdownData.map(option => (
           <li
             key={option}
-            className={`p-2 text-sm hover:bg-black hover:text-white cursor-pointer
+            className={`p-2 text-sm hover:bg-gray-300 hover:text-white cursor-pointer
             ${option.toLowerCase().startsWith(inputValue) ? 'block' : 'hidden'}`}
             onClick={() => {
               if (option.toLowerCase() !== selected.toLowerCase()) {
