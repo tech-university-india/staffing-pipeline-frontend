@@ -12,7 +12,7 @@ const PeopleDetailsPage = () => {
   useEffect(() => {
     makeRequest(GET_USER_DATA_BY_ID_URL(userId), {}, navigate).then(response => {
       setUserDetails(response);
-      console.log('response',userDetails);
+      console.log('response', userDetails);
     });
   }, [userId, navigate]);
   return (
