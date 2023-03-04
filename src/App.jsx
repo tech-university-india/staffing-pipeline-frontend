@@ -22,7 +22,7 @@ import {
   HOME_ROUTE,
   ERROR_ROUTE,
   NOT_FOUND_ROUTE,
-} from './constants/Routes';
+} from './constants/routes';
 import { Header } from './components';
 
 function App() {
