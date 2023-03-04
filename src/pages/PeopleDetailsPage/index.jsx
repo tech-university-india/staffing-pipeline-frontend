@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import './PeopleDetailsPage.css';
 const PeopleDetailsPage = () => {
   return (
     <div>
