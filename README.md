@@ -40,6 +40,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run test:coverage`
+
+Generates the coverage report for the tests in the non-interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
