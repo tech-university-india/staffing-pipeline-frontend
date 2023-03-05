@@ -8,7 +8,7 @@ describe('InputComponent', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should display placeholder value passed to it', () => {
-    render(<InputComponent placeholder="email" className="login-input"/>);
+    render(<InputComponent placeholder="email" className="login-input" />);
     expect(screen.getByPlaceholderText('email')).toBeTruthy();
   });
 });
