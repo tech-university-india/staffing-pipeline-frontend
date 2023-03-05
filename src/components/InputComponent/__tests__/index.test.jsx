@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import InputComponent from '..';
 
 describe('InputComponent', () => {
@@ -7,8 +7,8 @@ describe('InputComponent', () => {
     const { asFragment } = render(<InputComponent placeholder="email" />);
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should display placeholder value passed to it',()=>{
+  it('should display placeholder value passed to it', () => {
     render(<InputComponent placeholder="email" />);
     expect(screen.getByPlaceholderText('email')).toBeTruthy();
-  })
+  });
 });
