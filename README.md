@@ -1,4 +1,4 @@
-# Staffing Pipeline Fronted
+# Staffing Pipeline Frontend
 
 # Getting Started with Create React App
 
