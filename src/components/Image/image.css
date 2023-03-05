@@ -1,9 +1,7 @@
-img {
+.image-component {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: inherit;
 }
 
-.circle-image {
-  border-radius: 50%;
-}
