@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { BACKEND_URL } from '../../constants/apiEndpoints';
 import AUTHORIZATION_TOKEN from '../../constants/authorizationToken';
-//import AUTHORIZATION_TOKEN from '../../constants/authorizationToken';
 import { ERROR_ROUTE } from '../../constants/routes';
 
 const makeRequest = async (apiEndPoint, dynamicConfig = {}, navigate) => {
