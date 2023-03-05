@@ -10,12 +10,14 @@ const EngagementDetailsPage = () => {
   const { projectId } = useParams();
   const [engagementDetails, setEngagementDetails] = useState({});
   const navigate = useNavigate();
+
   useEffect(() => {
     makeRequest(GET_ENGAGEMENT_DATA_BY_ID_URL(projectId), {}, navigate).then(response => {
       setEngagementDetails(response);
       console.log('response', engagementDetails);
     });
   }, [projectId, navigate]);
+
   return (
     <div>
       <h1>Engagement Details Page</h1>
