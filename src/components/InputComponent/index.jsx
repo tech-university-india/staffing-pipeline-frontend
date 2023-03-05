@@ -1,10 +1,10 @@
 import React from 'react';
 import './InputComponent.css';
 import propTypes from 'prop-types';
-export default function InputComponent(props) {
+export default function InputComponent({className,placeholder}) {
   return (
     <div>
-      <input type="text" className={props.className} placeholder={props.placeholder} />
+      <input type="text" className={className} placeholder={placeholder} />
     </div>
   );
 }
