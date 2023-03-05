@@ -18,6 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
+    "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "format": "npx prettier-eslint --write \"{,!(node_modules)/**/}*.{js,jsx}\""
