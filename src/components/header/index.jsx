@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.css';
 import PropTypes from 'prop-types';
 
 export default function Header(props) {
