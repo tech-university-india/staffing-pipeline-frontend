@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Image Component should render correctly 1`] = `
-<DocumentFragment>
-  <img
-    class=""
-  />
-</DocumentFragment>
-`;
