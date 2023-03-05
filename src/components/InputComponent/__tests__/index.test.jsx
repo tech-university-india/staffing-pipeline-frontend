@@ -4,11 +4,11 @@ import InputComponent from '..';
 
 describe('InputComponent', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<InputComponent placeholder="email" />);
+    const { asFragment } = render(<InputComponent placeholder="email" className="login-input" />);
     expect(asFragment()).toMatchSnapshot();
   });
   it('should display placeholder value passed to it', () => {
-    render(<InputComponent placeholder="email" />);
+    render(<InputComponent placeholder="email" className="login-input"/>);
     expect(screen.getByPlaceholderText('email')).toBeTruthy();
   });
 });
