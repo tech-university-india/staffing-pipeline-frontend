@@ -4,7 +4,7 @@ import Header from '..';
 
 describe('Header', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<Header />);
+    const { asFragment } = render(<Header {...{ hasNav: true }} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -3,7 +3,6 @@
   height: 88px;
   background: #051C2C;
   color: white;
-
   display: flex;
   justify-content: center;
 }
@@ -11,13 +10,11 @@
 .logo {
   height: 70px;
   align-self: flex-end;
-
   padding: 0 180px 5px 0;
 }
 
 .navbar {
   display: flex;
-
   align-items: flex-end;
   justify-content: center;
   gap: 70px;
@@ -37,7 +34,6 @@
 .content-padding {
   height: 100%;
   width: 63vw;
-
   display: flex;
   box-sizing: border-box;
 }
