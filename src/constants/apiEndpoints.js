@@ -27,10 +27,12 @@ export const GET_ENGAGEMENT_DATA_URL = {
   url: 'api/projects',
   method: 'get',
 };
+
 export const CREATE_ENGAGEMENT_DATA_URL = {
   url: 'api/projects',
   method: 'post',
 };
+
 export const GET_ENGAGEMENT_DATA_BY_ID_URL = id => ({
   url: `api/projects/${id}`,
   method: 'get',
@@ -50,21 +52,23 @@ export const GET_CASE_STUDIES_DATA_URL = {
   url: 'api/case-studies',
   method: 'get',
 };
-export const CREATE_CASE_STUDIES__DATA_URL = {
+
+export const CREATE_CASE_STUDIES_DATA_URL = {
   url: 'api/case-studies',
   method: 'post',
 };
-export const GET_CASE_STUDIES__DATA_BY_ID_URL = id => ({
+
+export const GET_CASE_STUDIES_DATA_BY_ID_URL = id => ({
   url: `api/case-studies/${id}`,
   method: 'get',
 });
 
-export const UPDATE_CASE_STUDIES__DATA_URL = id => ({
+export const UPDATE_CASE_STUDIES_DATA_URL = id => ({
   url: `api/case-studies/${id}`,
   method: 'put',
 });
 
-export const DELETE_CASE_STUDIES__DATA_URL = id => ({
+export const DELETE_CASE_STUDIES_DATA_URL = id => ({
   url: `api/case-studies/${id}`,
   method: 'delete',
 });
