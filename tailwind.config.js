@@ -7,7 +7,7 @@ module.exports = {
       colors: {
         deepBlue: '#051C2C',
         electricBlue: '#2251FF',
-        cyan: '#00A9F4'
+        cyan: '#00A9F4',
       },
     },
     plugins: [],
