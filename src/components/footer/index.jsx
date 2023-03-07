@@ -4,7 +4,7 @@ import mckinseyLogo from '../../assets/logo/mckinsey-logo.png';
 
 const index = () => {
   return (
-    <div className='footer'>
+    <div className="footer">
       <img src={mckinseyLogo} alt="McKinsey and Company" />
     </div>
   );
