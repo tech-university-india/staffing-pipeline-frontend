@@ -23,12 +23,10 @@ import {
   ERROR_ROUTE,
   NOT_FOUND_ROUTE,
 } from './constants/routes';
-import { Header } from './components';
 
 function App() {
   return (
     <div className="app">
-      <Header hasNav={true} />
       <BrowserRouter>
         <Routes>
           <Route path={HOME_ROUTE} element={<HomePage />} />
