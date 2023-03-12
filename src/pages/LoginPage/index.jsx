@@ -10,11 +10,11 @@ const LoginPage = () => {
 
   return (
     <div>
-      <div className='login-page'>
+      <div className="login-page">
         <div className={'card'}>
           <h1>Hub Capablities and staffing portal</h1>
-          <InputComponent placeholder={'email'}/>
-          <InputComponent placeholder={'password'}/>
+          <InputComponent placeholder={'email'} />
+          <InputComponent placeholder={'password'} />
           <Button buttonText={'login'} handleClick={onSubmit} />
         </div>
       </div>
