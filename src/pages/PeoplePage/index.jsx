@@ -5,8 +5,8 @@ import Footer from '../../components/Footer';
 
 import makeRequest from '../../utils/makeRequest';
 import { GET_USER_DATA_URL } from '../../constants/apiEndpoints';
-import ImageCard from '../../components/ImageCard';
-import Footer from '../../components/Footer';
+import CardContainer from '../../components/CardContainer';
+import UserCard from '../../components/UserCard';
 
 const PeoplePage = () => {
   const [people, setPeople] = React.useState([]);
@@ -26,22 +26,21 @@ const PeoplePage = () => {
         <Header hasNav={true} />
         <h1>People Page</h1>
         <p>There was an error loading the people</p>
+        <Footer />
       </div>
     );
   }
   if (people) {
     const peopleCards = people.map(person => {
       return (
-        <ImageCard
+        <UserCard
           key={person.fmno}
           imageUrl={person.image}
           altText="person"
           identityNumber={person.fmno}
           name={person.name}
-          isEngagementCard={false}
-          buttonText="Know more"
           designation={person.role}
-          isUserCard={true}
+          location="Bangalore Office"
           handleButtonClick={() => {}}
         />
       );
@@ -51,8 +50,7 @@ const PeoplePage = () => {
         <div className="header">
           <Header hasNav={true} />
         </div>
-        <div className="card-container">{peopleCards}</div>
-
+        <CardContainer>{peopleCards}</CardContainer>
         <div className="footer-in-people-page">
           <Footer />
         </div>
