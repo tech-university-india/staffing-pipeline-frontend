@@ -1,13 +1,19 @@
 import * as React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import './ErrorPage.css';
 
 const ErrorPage = () => {
   const { errorCode } = useParams();
+  const { state } = useLocation();
   return (
     <div className="error-container">
       <p className="error-text">Something went wrong!</p>
-      {errorCode && <p className="errorText">{`Error code: ${errorCode}`}</p>}
+      {errorCode && (
+        <div>
+          <p className="errorText">{`Error code: ${errorCode}`}</p>
+          <p className="error-text">{state.message}</p>
+        </div>
+      )}
     </div>
   );
 };

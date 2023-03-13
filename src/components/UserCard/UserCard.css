@@ -1,4 +1,7 @@
-.user-card-style img{
-    height: 200px !important;
-    object-fit: fill;
+.user-card-style img {
+  height: 200px !important;
+  object-fit: fill;
+}
+.bg-white {
+  background-color: white;
 }
