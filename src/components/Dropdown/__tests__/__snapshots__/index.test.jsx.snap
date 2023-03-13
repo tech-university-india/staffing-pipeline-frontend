@@ -3,7 +3,7 @@
 exports[`Dropdown should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="w-44 font-normal h-80 m-16"
+    class="w-44 font-normal"
   >
     <div
       class="bg-white w-full p-2 flex justify-between items-center border-solid border border-black cursor-pointer"
@@ -24,7 +24,7 @@ exports[`Dropdown should render correctly 1`] = `
       </svg>
     </div>
     <ul
-      class="bg-white mt-2 overflow-y-auto max-h-0"
+      class="bg-white mt-2 overflow-y-auto max-h-0 mt-0"
     >
       <div
         class="flex items-center sticky top-0 h-10 bg-white"
@@ -51,19 +51,19 @@ exports[`Dropdown should render correctly 1`] = `
         />
       </div>
       <li
-        class="p-2 text-sm hover:bg-gray-300 hover:text-white cursor-pointer
+        class="p-2 text-sm hover:bg-gray-300 cursor-pointer
             block"
       >
         react
       </li>
       <li
-        class="p-2 text-sm hover:bg-gray-300 hover:text-white cursor-pointer
+        class="p-2 text-sm hover:bg-gray-300 cursor-pointer
             block"
       >
         nodejs
       </li>
       <li
-        class="p-2 text-sm hover:bg-gray-300 hover:text-white cursor-pointer
+        class="p-2 text-sm hover:bg-gray-300 cursor-pointer
             block"
       >
         express

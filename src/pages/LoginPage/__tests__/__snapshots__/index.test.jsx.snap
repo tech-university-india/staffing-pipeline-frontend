@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage Snapshot should render 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="font-light h-[88px] text-white flex justify-center bg-deepBlue"
+    >
+      <div
+        class="h-full xl:w-[63vw] lg:[70vw] md:[80vw] flex box-border"
+      >
+        <img
+          class="h-[70px] self-end pl-0 lg:pr-[180px] sm:pr-[90px] pt-0 pb-[5px]"
+          src="./assets/McK_Logo.png"
+        />
+      </div>
+    </div>
+    <div
+      class="login-page"
+    >
+      <div
+        class="card"
+      >
+        <h1>
+          Hub Capablities and staffing portal
+        </h1>
+        <div>
+          <input
+            class="login-input"
+            placeholder="email"
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            class="login-input"
+            placeholder="password"
+            type="text"
+          />
+        </div>
+        <button
+          class="button"
+          data-testid="button"
+        >
+          login
+        </button>
+      </div>
+    </div>
+    <div
+      class="footer"
+    >
+      <img
+        alt="McKinsey and Company"
+        src="mckinsey-logo.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
