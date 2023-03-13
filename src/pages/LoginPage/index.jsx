@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './LoginPage.css';
 import InputComponent from '../../components/InputComponent';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import { Header } from '../../components';
 const LoginPage = () => {
