@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification Notification snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="notification-card"
+  >
+    <div
+      class="message"
+    >
+      <p>
+        test
+      </p>
+    </div>
+    <div
+      class="close-button"
+      data-testid="X"
+    >
+      X
+    </div>
+  </div>
+</DocumentFragment>
+`;

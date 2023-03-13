@@ -11,7 +11,7 @@ export default function Notification({ message }) {
         <div className="message">
           <p>{message}</p>
         </div>
-        <div className="close-button" onClick={() => setShow(false)}>
+        <div className="close-button" data-testid="X" onClick={() => setShow(false)}>
           X
         </div>
       </div>
