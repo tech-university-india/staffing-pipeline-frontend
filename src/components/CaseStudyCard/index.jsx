@@ -3,8 +3,9 @@ import Image from '../Image';
 import './CaseStudyCard.css';
 import { BsArrowRight } from 'react-icons/bs';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-export default function CaseStudyCard({ imageUrl, altText, identityNumber, name, author, handleButtonClick }) {
+export default function CaseStudyCard({ imageUrl, altText, identityNumber, name, author, boxLink }) {
   return (
     <div className="shadow-lg flex flex-col w-64 case-study-card-style" data-testid="image-card">
       <Image imageUrl={imageUrl} altText={altText} />
@@ -13,10 +14,10 @@ export default function CaseStudyCard({ imageUrl, altText, identityNumber, name,
         <div className="font-bold text-xl mb-1">{name}</div>
         <div className="font-medium text-xs mb-1 text-gray-500">by {author}</div>
       </div>
-      <div className="link-button self-end text-xs mb-2 font-medium cursor-pointer" onClick={handleButtonClick}>
+      <Link to={boxLink} className="link-button self-end text-xs mb-2 font-medium cursor-pointer" target="_blank">
         Read More
         <BsArrowRight className="inline-block mx-2 text-blue-800" />
-      </div>
+      </Link>
     </div>
   );
 }
@@ -27,5 +28,5 @@ CaseStudyCard.propTypes = {
   identityNumber: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  handleButtonClick: PropTypes.func.isRequired,
+  boxLink: PropTypes.string.isRequired,
 };
