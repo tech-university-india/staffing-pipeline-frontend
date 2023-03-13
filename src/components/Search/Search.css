@@ -1,0 +1,18 @@
+.search-container {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.search-container > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: url('../../assets/icons/search.png') top right content-box no-repeat;
+  background-size: 25px;
+  height: 44px;
+  border: 1px solid #051b2c;
+  padding: 10px 10px 10px 10px;
+}
