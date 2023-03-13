@@ -7,16 +7,19 @@ import makeRequest from '../../utils/makeRequest';
 import { GET_USER_DATA_URL } from '../../constants/apiEndpoints';
 import CardContainer from '../../components/CardContainer';
 import UserCard from '../../components/UserCard';
+import { useNavigate } from 'react-router-dom';
 
 const PeoplePage = () => {
   const [people, setPeople] = React.useState([]);
   const [error, setError] = React.useState(null);
+  const navigate = useNavigate();
   React.useEffect(() => {
-    makeRequest(GET_USER_DATA_URL, {})
+    makeRequest(GET_USER_DATA_URL, {}, navigate)
       .then(data => {
         setPeople(data);
       })
       .catch(error => {
+        console.log(error);
         setError(error);
       });
   }, []);
@@ -25,7 +28,7 @@ const PeoplePage = () => {
       <div>
         <Header hasNav={true} />
         <h1>People Page</h1>
-        <p>There was an error loading the people</p>
+        <p>{error.message}</p>
         <Footer />
       </div>
     );
@@ -47,12 +50,11 @@ const PeoplePage = () => {
     });
     return (
       <div className="people-page">
-        <div className="header">
+        <div className="header-in-people">
           <Header hasNav={true} />
         </div>
-        <CardContainer>{peopleCards}</CardContainer>
-        <div className="footer-in-people-page">
-          <Footer />
+        <div className="container-in-people">
+          <CardContainer>{peopleCards}</CardContainer>
         </div>
       </div>
     );

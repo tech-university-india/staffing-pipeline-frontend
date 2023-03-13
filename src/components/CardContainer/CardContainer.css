@@ -1,9 +1,12 @@
 .card-container {
   display: flex;
-  height: 70%;
+  width: 80%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  row-gap: 40px;
+  column-gap: 50px;
+  align-self: center;
+  margin-top: 50px;
 }
