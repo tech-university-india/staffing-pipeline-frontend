@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should render without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="card-container"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</DocumentFragment>
+`;
