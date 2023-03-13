@@ -1,13 +1,13 @@
 import React from 'react';
-import './footer.css';
+import './Footer.css';
 import mckinseyLogo from '../../assets/logo/mckinsey-logo.png';
 
-const index = () => {
+const Footer = () => {
   return (
-    <div className='footer'>
-      <img src={mckinseyLogo} alt="McKinsey and Company" />
+    <div className="footer">
+      <img className='footer-img' src={mckinseyLogo} alt="McKinsey and Company" />
     </div>
   );
 };
 
-export default index;
+export default Footer;

@@ -1,8 +1,3 @@
-img{
-    height: 90px;
-    width: 245px;
-}
-
 .footer{
     position: fixed;
     bottom: 0;
@@ -13,3 +8,9 @@ img{
     padding-bottom: 18px;
     padding-top: 19px;
 }
+
+.footer-img{
+    height: 90px;
+    width: 245px;
+}
+
