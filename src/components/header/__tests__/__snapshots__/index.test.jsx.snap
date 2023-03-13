@@ -9,7 +9,7 @@ exports[`Header should render correctly with a navbar when Navbar boolean is tru
       class="h-full xl:w-[63vw] lg:[70vw] md:[80vw] flex box-border"
     >
       <img
-        class="h-[70px] self-end pl-0 lg:pr-[180px] sm:pr-[90px] pt-0 pb-[5px]"
+        class="h-[70px] w-[155px] aspect-auto self-end pl-0 lg:mr-[180px] sm:mr-[90px] pt-0 pb-[5px]"
         src="./assets/McK_Logo.png"
       />
       <div
@@ -45,7 +45,7 @@ exports[`Header should render correctly without a navbar when Navbar boolean is 
       class="h-full xl:w-[63vw] lg:[70vw] md:[80vw] flex box-border"
     >
       <img
-        class="h-[70px] self-end pl-0 lg:pr-[180px] sm:pr-[90px] pt-0 pb-[5px]"
+        class="h-[70px] w-[155px] aspect-auto self-end pl-0 lg:mr-[180px] sm:mr-[90px] pt-0 pb-[5px]"
         src="./assets/McK_Logo.png"
       />
     </div>
