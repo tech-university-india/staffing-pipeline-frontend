@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 import mckinseyLogo from '../../assets/logo/mckinsey-logo.png';
 
 const Footer = () => {
