@@ -1,5 +1,6 @@
 import './PeopleDetailsPage.css';
 import { Header } from '../../components';
+import Footer from '../../components/Footer';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { GET_USER_DATA_BY_ID_URL } from '../../constants/apiEndpoints';
@@ -21,6 +22,7 @@ const PeopleDetailsPage = () => {
     <div>
       <Header hasNav={true} />
       <h1>People Details Page</h1>
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
+import Footer from '../../components/Footer';
 import { Header } from '../../components';
-import Footer from '../../components/footer';
 const HomePage = () => {
   return (
     <div>
