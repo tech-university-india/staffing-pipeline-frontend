@@ -7,5 +7,5 @@ const CardContainer = props => {
 export default CardContainer;
 
 CardContainer.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
 };

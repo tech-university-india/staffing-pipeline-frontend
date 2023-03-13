@@ -1,0 +1,18 @@
+.card-container {
+  display: flex;
+  height: 70%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.people-page {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  height: 15%;
+}
+.footer-in-people-page {
+  height: 15%;
+}
