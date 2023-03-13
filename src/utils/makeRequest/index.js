@@ -12,7 +12,7 @@ const makeRequest = async (apiEndPoint, dynamicConfig = {}, navigate) => {
       ...dynamicConfig,
       headers: {
         authorization:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1a2htYW5AbWNraW5zZXkuY29tIiwiaWF0IjoxNjc4Njk4MzA4LCJleHAiOjE2Nzg3MDE5MDh9.LJPslSfhkohe5PUFhRlk5BOyNcn_RbjNNqVpcYh31jE',
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1a2htYW5AbWNraW5zZXkuY29tIiwiaWF0IjoxNjc4NzEwMDY2LCJleHAiOjE2Nzg3MTM2NjZ9.z0h4WtKMztIefSULKb3WfBB_7jNO1LXTnaYEh7_PzJ8',
       },
     };
     const { data } = await axios(requestDetails);
@@ -20,7 +20,11 @@ const makeRequest = async (apiEndPoint, dynamicConfig = {}, navigate) => {
   } catch (e) {
     const errorStatus = e.response?.status;
     if (errorStatus) {
-      navigate(`${ERROR_ROUTE}/${errorStatus}`);
+      navigate(`${ERROR_ROUTE}/${errorStatus}`, {
+        state: {
+          message: e.response.data.error,
+        },
+      });
     } else {
       navigate(ERROR_ROUTE);
     }
