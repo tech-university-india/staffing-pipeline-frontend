@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { BACKEND_URL } from '../../constants/apiEndpoints';
-// import AUTHORIZATION_TOKEN from '../../constants/authorizationToken';
+import AUTHORIZATION_TOKEN from '../../constants/authorizationToken';
 import { ERROR_ROUTE } from '../../constants/routes';
 
 const makeRequest = async (apiEndPoint, dynamicConfig = {}, navigate) => {
@@ -11,8 +11,7 @@ const makeRequest = async (apiEndPoint, dynamicConfig = {}, navigate) => {
       method: apiEndPoint.method,
       ...dynamicConfig,
       headers: {
-        authorization:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1a2htYW5AbWNraW5zZXkuY29tIiwiaWF0IjoxNjc4NzEwMDY2LCJleHAiOjE2Nzg3MTM2NjZ9.z0h4WtKMztIefSULKb3WfBB_7jNO1LXTnaYEh7_PzJ8',
+        authorization: AUTHORIZATION_TOKEN,
       },
     };
     const { data } = await axios(requestDetails);

@@ -6,6 +6,11 @@ jest.mock('react-router-dom', () => ({
   useParams: () => ({
     errorCode: 500,
   }),
+  useLocation: () => ({
+    state: {
+      message: 'jwt expired',
+    },
+  }),
 }));
 
 describe('ErrorPage', () => {

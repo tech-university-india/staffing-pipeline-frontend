@@ -14,15 +14,17 @@ export default function UserCard({
   handleButtonClick,
 }) {
   return (
-    <div className="shadow-lg flex flex-col w-56 user-card-style" data-testid="image-card">
+    <div className="bg-white shadow-lg flex flex-col w-56 user-card-style" data-testid="image-card">
       <Image imageUrl={imageUrl} altText={altText} />
-      <div className="px-3 py-2">
+      <div className="bg-white px-3 py-2">
         <div className="text-xs mb-1">FMNO: {identityNumber}</div>
         <div className="font-bold text-xl mb-1">{name}</div>
         <div className="font-semibold text-xs mb-1">{designation}</div>
         <div className="font-medium text-xs mb-1 text-gray-500">{location}</div>
       </div>
-      <div className="link-button self-end text-xs mb-2 font-medium cursor-pointer" onClick={handleButtonClick}>
+      <div
+        className="bg-white link-button self-end text-xs mb-2 font-medium cursor-pointer"
+        onClick={handleButtonClick}>
         Know More
         <BsArrowRight className="inline-block mx-2 text-blue-800" />
       </div>
