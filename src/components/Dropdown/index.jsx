@@ -9,14 +9,17 @@ export default function Dropdown({ dropdownName, dropdownData, selectOption }) {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   return (
-    <div className="w-44 font-normal h-80 m-16">
+    <div className="w-44 font-normal">
       <div
         onClick={() => setToggleDropdown(!toggleDropdown)}
         className="bg-white w-full p-2 flex justify-between items-center border-solid border border-black cursor-pointer">
         {selected ? selected : `${dropdownName}`}
         <BiChevronDown size={20} />
       </div>
-      <ul className={`bg-white mt-2 overflow-y-auto ${toggleDropdown ? 'max-h-60' : 'max-h-0'}`}>
+      <ul
+        className={`bg-white mt-2 overflow-y-auto ${
+          toggleDropdown ? 'max-h-60 border border-black-300' : 'max-h-0 mt-0'
+        }`}>
         <div className="flex items-center sticky top-0 h-10 bg-white">
           <AiOutlineSearch size={18} className="w-10" />
           <input
@@ -30,7 +33,7 @@ export default function Dropdown({ dropdownName, dropdownData, selectOption }) {
         {dropdownData.map(option => (
           <li
             key={option}
-            className={`p-2 text-sm hover:bg-gray-300 hover:text-white cursor-pointer
+            className={`p-2 text-sm hover:bg-gray-300 cursor-pointer
             ${option.toLowerCase().startsWith(inputValue) ? 'block' : 'hidden'}`}
             onClick={() => {
               if (option.toLowerCase() !== selected.toLowerCase()) {

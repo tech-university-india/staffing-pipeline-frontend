@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly with a navbar when Navbar boolean is true 1`] = `
+<DocumentFragment>
+  <div
+    class="font-light h-[88px] text-white flex justify-center bg-deepBlue"
+  >
+    <div
+      class="h-full xl:w-[63vw] lg:[70vw] md:[80vw] flex box-border"
+    >
+      <img
+        class="h-[70px] self-end pl-0 lg:pr-[180px] sm:pr-[90px] pt-0 pb-[5px]"
+        src="./assets/McK_Logo.png"
+      />
+      <div
+        class="grid grid-cols-3 gap-10 items-end"
+      >
+        <button
+          class="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]"
+        >
+          Engagements
+        </button>
+        <button
+          class="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]"
+        >
+          People
+        </button>
+        <button
+          class="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]"
+        >
+          Case Studies
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Header should render correctly without a navbar when Navbar boolean is false 1`] = `
+<DocumentFragment>
+  <div
+    class="font-light h-[88px] text-white flex justify-center bg-deepBlue"
+  >
+    <div
+      class="h-full xl:w-[63vw] lg:[70vw] md:[80vw] flex box-border"
+    >
+      <img
+        class="h-[70px] self-end pl-0 lg:pr-[180px] sm:pr-[90px] pt-0 pb-[5px]"
+        src="./assets/McK_Logo.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

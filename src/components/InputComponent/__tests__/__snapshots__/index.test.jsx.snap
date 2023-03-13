@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputComponent should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      class="login-input"
+      placeholder="email"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
