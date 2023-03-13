@@ -4,9 +4,7 @@ import ImageCard from '..';
 
 describe('ImageCard', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(
-      <ImageCard />
-    );
+    const { asFragment } = render(<ImageCard />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
