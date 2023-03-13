@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ImageCard from '..';
+import EngagementCard from '..';
 
-describe('ImageCard', () => {
+describe('EngagementCard', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<ImageCard />);
+    const { asFragment } = render(<EngagementCard />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

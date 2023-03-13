@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageCard should render correctly 1`] = `
+exports[`CaseStudyCard should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="shadow-lg flex flex-col w-56 image-style"
+    class="shadow-lg flex flex-col w-64 case-study-card-style"
     data-testid="image-card"
   >
     <img
       class="image-component"
     />
     <div
-      class="px-3 py-2"
+      class="px-3 py-1"
     >
       <div
         class="text-xs mb-1"
@@ -19,19 +19,15 @@ exports[`ImageCard should render correctly 1`] = `
         class="font-bold text-xl mb-1"
       />
       <div
-        class="font-semibold text-xs mb-1"
-      >
-        Start Date: undefined
-      </div>
-      <div
         class="font-medium text-xs mb-1 text-gray-500"
       >
-        undefined Days to go
+        by 
       </div>
     </div>
     <div
       class="link-button self-end text-xs mb-2 font-medium cursor-pointer"
     >
+      Read More
       <svg
         class="inline-block mx-2 text-blue-800"
         fill="currentColor"
