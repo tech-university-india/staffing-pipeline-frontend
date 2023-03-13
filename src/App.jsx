@@ -28,7 +28,7 @@ import { Header } from './components';
 function App() {
   return (
     <div className="app">
-      <Header hasNav={true} />
+      {/* Note: Move Hedaer component here */}
       <BrowserRouter>
         <Routes>
           <Route path={HOME_ROUTE} element={<HomePage />} />
