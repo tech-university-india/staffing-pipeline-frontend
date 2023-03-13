@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { CASE_STUDIES_ROUTE, PROJECTS_ROUTE, USERS_ROUTE } from '../../constants/routes';
 
-export default function Header({ hasNav }) {
+export default function Header({ hasNav, navigate, defaultTab }) {
+  const [activeTab, setActiveTab] = useState();
+
+  const handleClick = route => {
+    setActiveTab(route);
+  };
+
+  useEffect(() => {
+    if (defaultTab) {
+      setActiveTab(defaultTab);
+    }
+  }, [defaultTab]);
+
+  useEffect(() => {
+    if (navigate) {
+      navigate(activeTab);
+    }
+  }, [activeTab, navigate]);
+
   return (
     <div className="font-light h-[88px] text-white flex justify-center bg-deepBlue">
       <div className="h-full xl:w-[63vw] lg:[70vw] md:[80vw] flex box-border">
@@ -11,13 +30,19 @@ export default function Header({ hasNav }) {
         />
         {hasNav && (
           <div className="grid grid-cols-3 gap-10 items-end">
-            <button className="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]">
+            <button
+              className="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]"
+              onClick={() => handleClick(PROJECTS_ROUTE)}>
               Engagements
             </button>
-            <button className="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]">
+            <button
+              className="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]"
+              onClick={() => handleClick(USERS_ROUTE)}>
               People
             </button>
-            <button className="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]">
+            <button
+              className="text-[white] hover:text-cyan hover:border-b-[5px] hover:border-b-cyan hover:border-solid pt-0 pb-[15px] hover:pb-2.5 px-[5px]"
+              onClick={() => handleClick(CASE_STUDIES_ROUTE)}>
               Case Studies
             </button>
           </div>
@@ -29,4 +54,6 @@ export default function Header({ hasNav }) {
 
 Header.propTypes = {
   hasNav: PropTypes.bool,
+  navigate: PropTypes.func,
+  defaultTab: PropTypes.string,
 };
