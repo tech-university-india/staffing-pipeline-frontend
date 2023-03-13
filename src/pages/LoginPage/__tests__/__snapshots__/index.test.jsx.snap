@@ -51,6 +51,7 @@ exports[`LoginPage Snapshot should render 1`] = `
     >
       <img
         alt="McKinsey and Company"
+        class="footer-img"
         src="mckinsey-logo.png"
       />
     </div>
