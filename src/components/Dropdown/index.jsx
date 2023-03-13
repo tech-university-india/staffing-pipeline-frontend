@@ -16,36 +16,36 @@ export default function Dropdown({ dropdownName, dropdownData, selectOption }) {
         {selected ? selected : `${dropdownName}`}
         <BiChevronDown size={20} />
       </div>
-      <ul
-        className={`bg-white mt-2 overflow-y-auto ${
-          toggleDropdown ? 'max-h-60 border border-black-300' : 'max-h-0 mt-0'
-        }`}>
-        <div className="flex items-center sticky top-0 h-10 bg-white">
-          <AiOutlineSearch size={18} className="w-10" />
-          <input
-            type="text"
-            placeholder="search"
-            value={inputValue}
-            onChange={e => setInputValue(e.target.value.toLowerCase())}
-            className="placeholder:text-gray-700 outline-none text-mg w-36 pr-2"
-          />
-        </div>
-        {dropdownData.map(option => (
-          <li
-            key={option}
-            className={`p-2 text-sm hover:bg-gray-300 cursor-pointer
+      <div className={`${!toggleDropdown ? 'hidden' : ''}`}>
+        <ul className={'bg-white mt-2 overflow-y-auto max-h-60 border border-black-300'}>
+          <div className="flex items-center sticky top-0 h-10 bg-white">
+            <AiOutlineSearch size={18} className="w-10" />
+            <input
+              type="text"
+              placeholder="search"
+              value={inputValue}
+              onChange={e => setInputValue(e.target.value.toLowerCase())}
+              className="placeholder:text-gray-700 outline-none text-mg w-36 pr-2"
+            />
+          </div>
+
+          {dropdownData.map(option => (
+            <li
+              key={option}
+              className={`p-2 text-sm hover:bg-gray-300 cursor-pointer
             ${option.toLowerCase().startsWith(inputValue) ? 'block' : 'hidden'}`}
-            onClick={() => {
-              if (option.toLowerCase() !== selected.toLowerCase()) {
-                setSelected(option);
-                selectOption(option);
-              }
-              setToggleDropdown(false);
-            }}>
-            {option}
-          </li>
-        ))}
-      </ul>
+              onClick={() => {
+                if (option.toLowerCase() !== selected.toLowerCase()) {
+                  setSelected(option);
+                  selectOption(option);
+                }
+                setToggleDropdown(false);
+              }}>
+              {option}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
